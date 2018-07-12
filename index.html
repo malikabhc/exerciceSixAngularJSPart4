@@ -2,13 +2,30 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min.js"></script>
     <title>Exercice6</title>
   </head>
   <body ng-app>
-    <button type="button" name="buttonshow" ng-click="paragraph1=true; paragraph2=false">Affichage 1er paragraphe</button>
-    <button type="button" name="buttonshow" ng-click="paragraph1=false; paragraph2=true">Affichage 2nd paragraphe</button>
+    <button type="button" name="showText1" ng-click="paragraph1=true; paragraph2=false">Affichage 1er paragraphe</button>
+    <button type="button" name="showText2" ng-click="paragraph1=false; paragraph2=true">Affichage 2nd paragraphe</button>
     <p ng-show="paragraph1" show-hide="paragraph1">Paragraphe 1</p>
     <p ng-show="paragraph2" show-hide="paragraph2">Paragraphe 2</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
   </body>
 </html>
+
+<!-- AUTRE POSSIBILITE
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 6</title>
+  </head>
+  <body ng-app="">
+    <button type="button" name="text1" ng-click="show=false">paragraphe1</button>
+    <button type="button" name="text2" ng-click="show=true">paragraphe2</button>
+    <p ng-show="show">2.Les Tortues (Testudines), ou Chéloniens, forment un ordre de reptiles dont la caractéristique est d'avoir une carapace.</p>
+    <p ng-hide="show">1.La Tortue alligator (Macrochelys temminckii), unique représentant du genre Macrochelys, est une espèce de tortue de la famille des Chelydridae.</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+  </body>
+</html>
+-->
